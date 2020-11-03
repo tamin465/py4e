@@ -16,7 +16,7 @@ words = []
 
 fhand = open('romeo.txt', 'r')
 for line in fhand:
-    for word in line.split(' '):
+    for word in line.rstrip().split(' '):
         if word not in words:
             words.append(word)
 
